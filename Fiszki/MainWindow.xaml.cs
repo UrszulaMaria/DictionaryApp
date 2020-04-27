@@ -22,7 +22,7 @@ namespace Fiszki
     {
         public MainWindow()
         {
-            
+            //kurwa
         }
     }
 }

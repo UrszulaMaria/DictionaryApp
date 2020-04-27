@@ -16,13 +16,20 @@ using System.Windows.Shapes;
 namespace DictionaryApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AppWindow.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class AppWindow : Page
     {
-        public MainWindow()
+        Registration registration = new Registration();
+
+        public AppWindow()
         {
             InitializeComponent();
+        }
+
+        private void Register_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(registration);
         }
     }
 }

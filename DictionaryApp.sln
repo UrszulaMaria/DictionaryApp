@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryApp", "DictionaryApp\DictionaryApp.csproj", "{4D6856E5-F554-4343-828B-B80964EDFF2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryApp", "DictionaryApp\DictionaryApp.csproj", "{22064A24-F6A2-4E44-A1EF-05FAC18D32CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D6856E5-F554-4343-828B-B80964EDFF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D6856E5-F554-4343-828B-B80964EDFF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D6856E5-F554-4343-828B-B80964EDFF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D6856E5-F554-4343-828B-B80964EDFF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22064A24-F6A2-4E44-A1EF-05FAC18D32CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22064A24-F6A2-4E44-A1EF-05FAC18D32CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22064A24-F6A2-4E44-A1EF-05FAC18D32CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22064A24-F6A2-4E44-A1EF-05FAC18D32CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8BFAED9A-E100-4003-BBF1-3A0C06256376}
+		SolutionGuid = {DD6F1CC8-DA34-4D48-8C7D-F3DD48189680}
 	EndGlobalSection
 EndGlobal

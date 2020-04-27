@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace DictionaryApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Registration.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class Registration : Page
     {
-        public MainWindow()
+        public Registration()
         {
             InitializeComponent();
         }

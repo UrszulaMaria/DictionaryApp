@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFA000">
-        
-      
         <Label Content="Wylosowane słowo: " HorizontalAlignment="Left" Margin="135,12,0,0" VerticalAlignment="Top" Height="26" Width="117"/>
         <Button Background="#B0BEC5" Content="Losuj" HorizontalAlignment="Left" Margin="28,41,0,0" VerticalAlignment="Top" Width="75" Height="20" />
         <TextBox x:Name="losowane" HorizontalAlignment="Left" Height="23" Margin="135,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#B0BEC5"/>

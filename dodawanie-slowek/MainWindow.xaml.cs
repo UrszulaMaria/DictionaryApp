@@ -23,6 +23,17 @@ namespace dodawanie_slowek
         public MainWindow()
         {
             InitializeComponent();
+            addProgressBar.Visibility = Visibility.Hidden;
+        }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
+            addProgressBar.Visibility = Visibility.Visible;
+
+            for (int i = 0; i < 100; i++)
+            {
+                addProgressBar.Value++;
+            }
         }
     }
 }

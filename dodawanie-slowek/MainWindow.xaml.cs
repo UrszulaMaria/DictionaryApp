@@ -34,6 +34,16 @@ namespace dodawanie_slowek
             {
                 addProgressBar.Value++;
             }
+
+
+
+            /*
+                TODO: 
+                - connect to db
+                - check if the word exists
+                - check for vulgarisms
+                - check if troll (?)
+             */
         }
     }
 }

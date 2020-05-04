@@ -8,27 +8,35 @@
         Title="Gramatyka" Height="450" Width="800">
     <Grid Background="#FFFFA000">
         <Label Content="Gramatyka" HorizontalAlignment="Left" Height="61" Margin="314,10,0,0" VerticalAlignment="Top" Width="170" FontSize="36" FontFamily="Calibri"/>
-        <ComboBox x:Name="lista_rozwijana_terazniejsze" HorizontalAlignment="Left" Height="22" Margin="69,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
+        <ComboBox x:Name="lista_rozwijana_terazniejsze" HorizontalAlignment="Left" Height="22" Margin="242,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
             <ComboBoxItem x:Name="present_simple" Content="Present Simple"></ComboBoxItem>
             <ComboBoxItem x:Name="present_continuous" Content="Present Continuous"></ComboBoxItem>
             <ComboBoxItem x:Name="present_perfect" Content="Present Perfect"></ComboBoxItem>
             <ComboBoxItem x:Name="present_perfect_continuous" Content="Present Perfect Continuous"></ComboBoxItem>
         </ComboBox>
-        <ComboBox x:Name="lista_rozwijana_przeszle" HorizontalAlignment="Left" Height="22" Margin="325,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
+        <ComboBox x:Name="lista_rozwijana_przeszle" HorizontalAlignment="Left" Height="22" Margin="69,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
             <ComboBoxItem x:Name="past_simple" Content="Past Simple"></ComboBoxItem>
             <ComboBoxItem x:Name="past_continuous" Content="Past Continuous"></ComboBoxItem>
             <ComboBoxItem x:Name="past_perfect" Content="Past Perfect"></ComboBoxItem>
             <ComboBoxItem x:Name="past_perfect_continuous" Content="Past Perfect Continuous"></ComboBoxItem>
         </ComboBox>
-        <ComboBox x:Name="lista_rozwijana_przyszle" HorizontalAlignment="Left" Height="22" Margin="583,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
+        <ComboBox x:Name="lista_rozwijana_przyszle" HorizontalAlignment="Left" Height="22" Margin="414,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
             <ComboBoxItem x:Name="future_simple" Content="Future Simple"></ComboBoxItem>
             <ComboBoxItem x:Name="future_continuous" Content="Future Continuous"></ComboBoxItem>
             <ComboBoxItem x:Name="future_perfect" Content="Future Perfect"></ComboBoxItem>
             <ComboBoxItem x:Name="future_perfect_continuous" Content="Future Perfect Continuous"></ComboBoxItem>
         </ComboBox>
+        <ComboBox x:Name="lista_rozwijana_warunkowe" HorizontalAlignment="Left" Height="22" Margin="583,102,0,0" VerticalAlignment="Top" Width="140" Background="#FFB0BEC5" FontFamily="Calibri" FontSize="13" SelectionChanged="Lista_rozwijana_SelectionChanged" BorderBrush="#FFB0BEC5">
+            <ComboBoxItem x:Name="tr_zerowy" Content="Zerowy"></ComboBoxItem>
+            <ComboBoxItem x:Name="tr_pierwszy" Content="Pierwszy"></ComboBoxItem>
+            <ComboBoxItem x:Name="tr_drugi" Content="Drugi"></ComboBoxItem>
+            <ComboBoxItem x:Name="tr_trzeci" Content="Trzeci"></ComboBoxItem>
+            <ComboBoxItem x:Name="tr_mieszany" Content="Mieszany"></ComboBoxItem>
+        </ComboBox>
         <TextBox x:Name="tresc" Height="226" Margin="69,152,70.6,0" BorderThickness="0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Text="Wyjaśnienie wybranego przez Ciebie zagadnienia, wyświetli się tutaj." VerticalAlignment="Top" Background="#FFFFA000" FontFamily="Calibri" FontSize="13" TextAlignment="Center" BorderBrush="#FFFFA000" SelectionBrush="#FFFFA000" CaretBrush="#FFFFA000" OpacityMask="#FFFFA000" TextChanged="Tresc_TextChanged"/>
         <Label Content="Czasy przeszłe:" HorizontalAlignment="Left" Margin="69,64,0,0" VerticalAlignment="Top" Height="33" Width="91" FontFamily="Calibri" FontSize="13"/>
-        <Label Content="Czasy teraźniejsze:" HorizontalAlignment="Left" Margin="325,64,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Calibri" FontSize="13"/>
-        <Label Content="Czasy przyszłe:" HorizontalAlignment="Left" Margin="583,64,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Calibri" FontSize="13"/>
+        <Label Content="Czasy teraźniejsze:" HorizontalAlignment="Left" Margin="242,64,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Calibri" FontSize="13"/>
+        <Label Content="Czasy przyszłe:" HorizontalAlignment="Left" Margin="414,64,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Calibri" FontSize="13"/>
+        <Label Content="Tryby warunkowe:" HorizontalAlignment="Left" Margin="583,64,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Calibri" FontSize="13"/>
     </Grid>
 </Window>

@@ -13,5 +13,7 @@ namespace Gramatyka
     /// </summary>
     public partial class App : Application
     {
+
+        //blablabla
     }
 }

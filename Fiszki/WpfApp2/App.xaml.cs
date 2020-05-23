@@ -6,10 +6,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Słownik
+namespace WpfApp2
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// Logika interakcji dla klasy App.xaml
     /// </summary>
     public partial class App : Application
     {

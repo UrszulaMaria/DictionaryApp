@@ -1,0 +1,15 @@
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\bin\Debug\Gra w słówka.exe.config
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\bin\Debug\Gra w słówka.exe
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\bin\Debug\Gra w słówka.pdb
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.csprojAssemblyReference.cache
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\MainWindow.g.cs
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\App.g.cs
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka_MarkupCompile.cache
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka_MarkupCompile.lref
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\MainWindow.baml
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.g.resources
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra_w_słówka.Properties.Resources.resources
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.csproj.GenerateResource.cache
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.csproj.CoreCompileInputs.cache
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.exe
+E:\UrszulaMaria\DictionaryApp\Gra w słówka\Gra w słówka\obj\Debug\Gra w słówka.pdb

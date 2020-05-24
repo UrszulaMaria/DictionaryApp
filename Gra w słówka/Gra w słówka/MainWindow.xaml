@@ -5,20 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gra_w_słówka"
         mc:Ignorable="d"
-        Title="Zabawa-slowek" Height="720" Width="1280">
+        Title="Zabawa-slowek" Height="720" Width="1280" Initialized="Window_Initialized">
     <Grid>
         <Rectangle Fill="#B0BEC5" HorizontalAlignment="Left" Height="689" Stroke="Black" VerticalAlignment="Top" Width="1272" RenderTransformOrigin="0.5,0.45"/>
         <Rectangle Fill="#FFA000" HorizontalAlignment="Left" Height="50"  VerticalAlignment="Top" Width="1272"/>
         <Rectangle Fill="#FFA000" HorizontalAlignment="Left" Height="639"  VerticalAlignment="Top" Width="50" Margin="0,50,0,0"/>
         <TextBlock HorizontalAlignment="Center" Margin="1,50,1,0" TextWrapping="Wrap" Text="Zabawa w słówka" TextAlignment="Center" FontSize="32" VerticalAlignment="Top" Height="55" Width="405"/>
         <TextBlock HorizontalAlignment="Left" Margin="160,295,0,0" Background="#607D8B" TextWrapping="Wrap" FontSize="12" TextAlignment="Center" VerticalAlignment="Top" Height="40" Width="960"><InlineUIContainer>
-                <Label Content="Zmiszane słówka"/>
+                <Label x:Name="ZmiszaneSlowka" Content="Zmiszane słówka"/>
             </InlineUIContainer></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="130,400,0,0" Background="#607D8B" TextWrapping="Wrap" Text="" FontSize="12" TextAlignment="Center" VerticalAlignment="Top" Height="40" Width="1020"/>
-        <Label Content="Odpowiedź" HorizontalAlignment="Left" Margin="617,400,0,0" VerticalAlignment="Top" Height="40" Width="83"/>
-        <TextBlock HorizontalAlignment="Left" Height="70" Margin="1210,50,0,0" Background="#607D8B" TextAlignment="Center" VerticalAlignment="Top" Width="62"><Run FontSize="20" Text="Punkty"/></TextBlock>
-        <Button Content="Reset" HorizontalAlignment="Left" Margin="130,540,0,0" VerticalAlignment="Top" Width="100" Height="60"/>
-        <Button Content= "Sprawdź" HorizontalAlignment="Left" Margin="600,540,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Height="60"/>
-        <Button Content="Następny" HorizontalAlignment="Left" Margin="1050,540,0,0" VerticalAlignment="Top" Width="100" Height="60"/>
+        <TextBox x:Name="WordsToWrite" Text="Tu wpisz słowa" HorizontalAlignment="Left" Margin="130,400,0,0" Background="#607D8B" TextWrapping="Wrap" FontSize="12" TextAlignment="Center" VerticalAlignment="Top" Height="40" Width="1020" GotFocus="WordsToWrite_GotFocus"/>
+        <TextBlock x:Name="Points" HorizontalAlignment="Left" Height="70" Margin="1210,50,0,0" Background="#607D8B" TextAlignment="Center" VerticalAlignment="Top" Width="62"><Run FontSize="20" Text="Punkty /n 0"/></TextBlock>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="130,540,0,0" VerticalAlignment="Top" Width="100" Height="60" Click="Button_Click_2"/>
+        <Button Content= "Sprawdź" HorizontalAlignment="Left" Margin="600,540,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Height="60" Click="Button_Click_1"/>
+        <Button Content="Następny" HorizontalAlignment="Left" Margin="1050,540,0,0" VerticalAlignment="Top" Width="100" Height="60" Click="Button_Click"/>
     </Grid>
 </Window>

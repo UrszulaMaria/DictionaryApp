@@ -1,7 +1,7 @@
-﻿<Application x:Class="DictionaryApp.App"
+﻿<Application x:Class="DictionaryApp.Translator.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DictionaryApp"
+             xmlns:local="clr-namespace:DictionaryApp.Translator"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

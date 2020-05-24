@@ -144,9 +144,13 @@ namespace dodawanie_slowek
             // Execute only, if word does not exist
             if (!wordExist)
             {
-                using (StreamWriter sw = File.AppendText(path))
+                // If word is free from vulgarity
+                if (!containsVulgarity(polishWord, englishWord))
                 {
-                    sw.WriteLine(polishWord + "=" + englishWord);
+                    using (StreamWriter sw = File.AppendText(path))
+                    {
+                        sw.WriteLine(polishWord + "=" + englishWord);
+                    }
                 }
             } 
             else
@@ -156,6 +160,58 @@ namespace dodawanie_slowek
 
             // Recheck db for words and update local variable
             checkIfexist();
+        }
+
+
+        private bool containsVulgarity(string polishWord, string englishWord)
+        {
+            string[] vulgarityList = new string[512];
+
+            String line;
+            try
+            {
+                // Variable for loops
+                int x = 0;
+
+                // Pass the file path and file name to the StreamReader constructor
+                StreamReader sr = new StreamReader("C:\\vulgarityList.txt");
+
+                // Read the first line of text
+                line = sr.ReadLine();
+                wordList[x] = line;
+                x++;
+
+                // Continue to read until you reach end of file
+                while (line != null)
+                {
+                    // Write the lie to console window
+                    Console.WriteLine(line);
+                    // Read the next line
+                    line = sr.ReadLine();
+                    // Save line to array
+                    wordList[x] = line;
+                    x++;
+                }
+
+                // Close the file
+                sr.Close();
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+
+
+            // Check if word exist in db
+            if (vulgarityList.Contains(polishWord) || vulgarityList.Contains(englishWord))
+                return true;
+            else
+                return false;
         }
     }
 }

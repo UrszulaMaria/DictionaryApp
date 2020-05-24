@@ -11,9 +11,10 @@
         <Label Content="Dodawanie słówek" HorizontalAlignment="Left" Margin="300,60,0,0" VerticalAlignment="Top" FontSize="24"/>
         <Label Content="Słówko w języku polskim" HorizontalAlignment="Left" Margin="127,175,0,0" VerticalAlignment="Top"/>
         <Label Content="Słówko w języku angielskim" HorizontalAlignment="Left" Margin="524,175,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="138,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="542,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="polishWordBox" HorizontalAlignment="Left" Height="23" Margin="138,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="englishWordBox" HorizontalAlignment="Left" Height="23" Margin="542,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ProgressBar x:Name="addProgressBar" HorizontalAlignment="Left" Height="10" Margin="358,359,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="errorWord" Content="Błąd, słowo istnieje" HorizontalAlignment="Left" Margin="353,273,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

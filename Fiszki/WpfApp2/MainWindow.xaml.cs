@@ -35,21 +35,58 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
-            
+
 
         }
 
-        
-        
 
-      
+        private void dodaj_slowo1(object sender, RoutedEventArgs e)
+        {
+
+            if (polskie_slowo.Text.Contains(" ") || angielskie_slowo.Text.Contains(" "))
+            {
+                AutoClosingMessageBox.Show("Ciąg znaków zawiera znaki białe!!", "Tłumacz", 2000);
+            }
+            else
+            {
+
+                if (polskie_slowo.Text == "" || angielskie_slowo.Text == "")
+                {
+                    AutoClosingMessageBox.Show("Wypełnij wszystkie pola.", "Dodaj słówko", 6000);
+                }
+                else
+                {
+
+                    XmlDocument Plik = new XmlDocument();
+                    Plik.Load("Baza.xml");
+
+                    XmlNode Polski = Plik.SelectSingleNode("slownik/polski", null); ;
+                    XmlNode slowo = Plik.CreateElement("slowo");
+                    slowo.InnerText = polskie_slowo.Text;
+                    Polski.AppendChild(slowo);
+
+                    XmlNode Angielski = Plik.SelectSingleNode("slownik/angielski", null); ;
+                    XmlNode word = Plik.CreateElement("word");
+                    word.InnerText = angielskie_slowo.Text;
+                    Angielski.AppendChild(word);
+
+
+                    Plik.Save("baza.xml");
+                    AutoClosingMessageBox.Show("Słowo dodane poprawnie", "Dodaj słówko", 4000);
+                    polskie_slowo.Text = angielskie_slowo.Text ="";
+
+                }
+
+            }
+
+        }
 
         private void losuj(object sender, RoutedEventArgs e)//losuj
         {
             XmlDocument Dokument = new XmlDocument();
             Dokument.Load("Baza.xml");
             XmlNodeList lista1 = Dokument.SelectNodes("slownik/polski/slowo");
-           
+
             Random zmienna = new Random();
             int losowa = zmienna.Next(0, lista1.Count);
 
@@ -68,7 +105,7 @@ namespace WpfApp2
             {
                 poprawne.Content = ++licznik_poprawne;
                 sprawdzane.Text = "";
-               
+
 
             }
             else
@@ -78,8 +115,8 @@ namespace WpfApp2
             }
         }
 
-       
-        
+
+
 
         private void Reset_fiszki(object sender, RoutedEventArgs e)
         {
@@ -92,7 +129,7 @@ namespace WpfApp2
 
 
         }
-        
+
 
 
         public class AutoClosingMessageBox
@@ -113,7 +150,7 @@ namespace WpfApp2
             }
             void OnTimerElapsed(object state)
             {
-                IntPtr mbWnd = FindWindow("#32770", _caption); 
+                IntPtr mbWnd = FindWindow("#32770", _caption);
                 if (mbWnd != IntPtr.Zero)
                     SendMessage(mbWnd, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
                 _timeoutTimer.Dispose();
@@ -126,6 +163,6 @@ namespace WpfApp2
         }
 
 
-        
+
     }
 }

@@ -15,7 +15,7 @@
                     <ColumnDefinition Width="539*"/>
                 </Grid.ColumnDefinitions>
 
-                
+
                 <Label Content="Wylosowane słowo: " HorizontalAlignment="Left" Margin="135,12,0,0" VerticalAlignment="Top" Height="26" Width="117"/>
                 <Button Content="Losuj" HorizontalAlignment="Left" Margin="28,41,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="losuj"/>
                 <TextBox x:Name="losowane" HorizontalAlignment="Left" Height="23" Margin="135,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#B0BEC5"/>
@@ -26,11 +26,18 @@
                 <Label Content="Poprawne słowa:" HorizontalAlignment="Left" Margin="28,222,0,0" VerticalAlignment="Top" Height="26" Width="115"/>
                 <Button Content="Reset" HorizontalAlignment="Left" Margin="62,294,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Reset_fiszki"/>
                 <GridSplitter HorizontalAlignment="Left" Height="391" Margin="164,0,0,0" VerticalAlignment="Top" Background="Black" Width="5" Grid.Column="1"/>
-                <TextBlock HorizontalAlignment="Left" Margin="231,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="192" Width="232" Grid.Column="1"><Run Text="      Fiszki można także wykorzystywać jako samodzielnie wykonaną pomoc naukową służącą do systematycznego uczenia się. "/><LineBreak/><Run Text="Jest to szybki sposób na zapamietywanie słówek w innych językach."/><LineBreak/><Run/></TextBlock>
+                <Label Content="                               Dodaj Słowo Do listy Fiszek" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="340" Margin="420,33,0,0" Grid.ColumnSpan="3"/>
+                <Label Content="Polski:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="46" Width="42" Margin="186,81,0,0" RenderTransformOrigin="0.476,2.44" Grid.Column="1"/>
+                <Label Content="Angielski:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="66" Margin="186,138,0,0" Grid.Column="1"/>
+                <TextBox x:Name="polskie_slowo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,115,0,0" Tag="Polski" Background="#B0BEC5" Grid.Column="1"/>
+                <TextBox x:Name="angielskie_slowo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,164,0,0" Tag="" Background="#B0BEC5" Grid.Column="1"/>
+
+                <Button Content="Dodaj" HorizontalAlignment="Left" Margin="204,294,0,0" VerticalAlignment="Top" Width="75" Click="dodaj_slowo1" Grid.Column="1"/>
 
                 <TextBox x:Name="numer_slowa" HorizontalAlignment="Left" Height="23" Margin="46,210,0,0" Visibility="Hidden" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
                 <Label x:Name="bledne" Content="" HorizontalAlignment="Left" Margin="135,172,0,0" VerticalAlignment="Top" Height="26" Width="99"/>
                 <Label x:Name="poprawne" Content="" HorizontalAlignment="Left" Margin="148,222,0,0" VerticalAlignment="Top" Height="26" Width="99"/>
+                
             </Grid>
         </TabItem>
     </TabControl>
